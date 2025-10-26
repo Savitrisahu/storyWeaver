@@ -1,0 +1,49 @@
+.fantasy {
+    background-color: #adffad;
+    color: green;
+}
+
+.mystery {
+    background-color: #e7bfe7;
+    color: purple;
+}
+
+.sci-fi {
+    background-color: #a7c7ff;
+    color: rgb(50, 65, 92);
+}
+
+.adventure {
+   background-color: #ffedd5;
+   color: #9a3412;
+}
+
+.children {
+    background-color: #ecfccb;
+    color: #4d7c0f;
+}
+
+.historical {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+.horror {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.poetry {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+
+.thriller {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.romance {
+    background-color: #fce7f3;
+    color: #be185d;
+}

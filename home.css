@@ -1,0 +1,113 @@
+
+
+.featuredStories{
+    height: 55vh;
+    width: 80vw;
+    margin: 0vh auto;
+}
+
+#heading, #text{
+text-align: center;
+line-height: 40px;
+}
+
+#heading{
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 70px;
+}
+
+#text{
+    font-size: 18px;
+}
+
+.stories{
+    height: 40vh;
+    width: 85vw;
+    display: flex;
+    margin:50px auto 5px auto;
+}
+
+.story{
+    height: 38vh;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    line-height: 23px;
+    background-color: white;
+    box-shadow:0px 1px 20px 0px #b3acac;
+     text-overflow: ellipsis;
+}
+
+.stories li{
+    height: 25px;
+    width: 70px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+    margin-top: 10px;
+    display: flex;
+justify-content: space-between;
+}
+.boxes{
+    margin-top: 30px;
+}
+
+.boxes a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.story p {
+  margin-top: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  word-break: break-word;
+  line-height: 1.4;
+  color: rgba(24, 22, 22, 0.616);
+}
+
+ .like{ 
+     background-color: red;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+    color: white;
+} 
+
+#Browse{
+    text-decoration: none;
+    padding: 15px 30px;
+    color: red;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin:  60px auto;
+    background-color: #10b981;
+    color: white;
+    border: transparent;
+    width: 170px;
+}
+
+#Browse:hover{
+    box-shadow: 1px 2px 10px black;
+}
+
+
+
+
+

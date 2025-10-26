@@ -1,0 +1,129 @@
+.searchbox {
+    height: 20vh;
+    width: 85vw;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+#search {
+    height: 50px;
+    width: 75vw;
+    margin: 20px 0px 20px 35px;
+    border-radius: 5px;
+}
+
+.searchbox hr {
+    width: 88%;
+    margin-left: 35px;
+    text-decoration-thickness: 50px;
+}
+
+.links {
+    margin: 20px 0px 0px 20px;
+}
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+    color: blue;
+    font-weight: bold;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    }
+
+.links a:focus{
+    background-color: #10b981;
+    color: white;
+}
+
+.texts h2 {
+    font-size: 35px;
+    margin-left: 100px;
+}
+
+.texts p {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.stories {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+     height: 43vh;
+    width: 85vw;
+    display: flex;
+    margin: 30px auto 5px auto;
+}
+
+.story {
+    width: 30%; 
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+     height: 40vh;
+    width: 25%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    line-height: 23px;
+    background-color: white;
+    box-shadow: 0px 1px 20px 0px #b3acac; 
+      text-overflow: ellipsis;
+} 
+
+
+.stories li {
+    height: 25px;
+    width: 70px;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxes {
+    margin-top: 30px;
+}
+.boxes a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+.like{ 
+     background-color:red;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+} 
+
+.boxes hr{
+    margin-top: 20px;
+}
+#b3 hr{
+    margin-top: 35px;
+}
+.story p {
+  margin-top: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-break: break-word;
+  line-height: 1.4;
+  color: rgba(24, 22, 22, 0.616);
+}
+
