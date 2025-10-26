@@ -22,9 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
             password: pass
         }));
         localStorage.setItem("username", user);
+         localStorage.setItem("isLoggedIn", "true");
+
 
         alert("Signup successful!");
         window.location.href = "index.html"; 
+
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 300);
     });
 });
 
