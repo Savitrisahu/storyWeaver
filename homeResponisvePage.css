@@ -1,0 +1,169 @@
+/* laptop small desktop */
+
+@media (max-width:1200px) {
+    /* body{
+          height: auto;
+    width: 100vw;
+    } */
+    .featuredStories{
+            height: 100vh;
+            margin-top: 100px;
+            width: 85vw;
+    }
+
+    #heading{
+        margin-top: 10px;
+    }
+
+    .story{
+        height: 60vh;
+    }
+
+    #Browse{
+        margin-top: 20px;
+    }
+
+  
+}
+
+
+
+/* tablet landscape  */
+ /* @media (max-width: 992px) {
+    
+} */
+
+/* tablet portrait  */
+@media (max-width: 768px) {
+     .featuredStories{
+            height: 100vh;
+            margin-top: 100px;
+            width: 85vw;
+    }
+
+    #heading{
+        margin-top: 10px;
+    }
+
+    .story{
+        height: 62vh;
+    }
+
+    #Browse{
+        margin-top: 20px;
+    }
+    #storybox1{
+        font-size: 24px;
+    }
+
+}
+
+/* large mobile */
+
+@media (max-width: 576px) {
+
+    .featuredStories{
+        height: auto;
+    }
+    .stories{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .story{
+        height: 50vh;
+        width: 45vw;
+        margin: 10px;
+         text-overflow: ellipsis;
+         margin: 10px auto;
+    }
+    .story p{
+         display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+    }
+    .boxes a{
+        font-size: 20px;
+    }
+    #storybox1 ,#storybox1{
+        font-size: 17px;
+    }
+}
+
+
+/* small mobile */
+
+@media (max-width: 400px) {
+#text{
+    font-size: 10px;
+}
+
+.story{
+    width: 70vw;
+}
+
+.boxes a{
+    font-size: 20px;
+}
+}
+
+
+@media (max-width: 250px) {
+.story{
+    width: 80vw;
+}
+
+.boxes p{
+    font-size: 15px;
+}
+.boxes a{
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#text{
+    line-height: 12px;
+}
+
+#heading{
+    font-size: 22px;
+}
+.featuredStories{
+    margin-top: 22px;
+}
+
+#Browse{
+    font-size: 15px;
+    width: 51vw;
+    padding: 10px;
+}
+}
+
+
+
+/* ultra large monitors */
+
+@media (min-width:1200px) {
+
+    .story{
+        height: 60vh;
+    }
+    .boxes a{
+        font-size: 35px;
+    }
+
+    #hr3{
+        margin-top: 50px;
+    }
+
+    #Browse{
+        margin-top: 200px;
+    }
+}
+

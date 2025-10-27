@@ -1,0 +1,93 @@
+/* 🖥️ Large Desktop	above 1200px	(Default styles — no query needed) */
+
+@media (max-width:1320px) {
+    .loginForm{
+        height: 120vh;
+        width: 30vw;
+    }
+
+    .headings p{
+        line-height: 15px;
+    }
+}
+
+/* 💻 Laptop / Small Desktop	up to 1200px	 */
+@media (max-width: 1200px) { 
+        .loginForm{
+            height: 120vh;
+            width: 33vw;
+        }
+        .headings h2{
+            font-size: 35px;
+        }
+        .headings p{
+            font-size: 15px;
+        }
+}
+
+
+/* 📱 Tablet (landscape)	up to 992px */
+	@media (max-width: 992px) {
+         .loginForm{
+            height: 120vh;
+            width: 40vw;
+        }
+      }
+
+
+/* 📱 Tablet (portrait)	up to 768px */
+	 @media (max-width: 768px) { 
+         .loginForm{
+            height: 105vh;
+        }
+        input{
+            width: 35vw;
+        }
+
+        .headings h2{
+            font-size: 30px;
+        }
+        .headings p{
+            font-size: 15px;
+            line-height: 15px;
+        } 
+
+        .data{
+            width: 36vw;
+            margin: 10px ;
+        }
+
+        #signup{
+            margin-top: 60px;
+        }
+     } 
+
+
+/* 📱 Large Mobile	up to 576px	 */
+@media (max-width: 576px) {  
+    .headings h2{
+            font-size: 25px;
+        }
+        .headings p{
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        .loginForm p{
+            font-size: 10px;
+        }
+        #account{
+            font-size: 10px;
+        }
+}
+
+
+/* 📱 Small Mobile	up to 400px	 */
+@media (max-width: 400px) {
+    .loginForm{
+        width: 60vw;
+    }
+     .data, input{
+            width: 50vw;
+        }
+ } 

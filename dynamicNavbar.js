@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (isLoggedIn) {
         navbar.innerHTML = `
             <a href="index.html" id="logo">Story Weaver</a>
-            <div class="nav1">
+            <div class="nav1" id = "nav1">
                 <a href="index.html">Home</a>
                 <a href="library.html">Library</a>
                 <a href="myLibrary.html">My Library</a>
                 <a href="submit.html">Submit</a>
             </div>
-            <div class="nav2">
+            <div class="nav2" id = "nav2">
                 <a href="#" id="userGreeting">Hello, ${username}</a>
                 <a href="#" id="logout">Logout</a>
             </div>
@@ -41,3 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+
