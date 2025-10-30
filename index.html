@@ -6,89 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story Weaver Anthology</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="homeResponisvePage.css">
+    <link rel="stylesheet" href="newnavbar.css">
     <link rel="stylesheet" href="colorPage.css">
-    <!-- <link rel="stylesheet" href="responsiveHome.css"> -->
-     <link rel="stylesheet" href="homeResponisvePage.css">
+    
 </head>
 
 <body>
-
     <div class="navbar" id="navbar"></div>
 
-    <div class="featuredStories">
-        <h2 id="heading">Featured Stories</h2>
-        <p id="text">Discover new worlds and compelling narratives from our top picks</p>
+    <div class="container">
+        <div class="headings">
+            <h2>Featured Stories</h2>
+            <p>Discover new worlds and compelling narratives from our top picks.</p>
+        </div>
+        <div class="storyBox">
+            <div class="storyBoxes box1">
+                <p class="genre fantasy">Fantasy</p>
+                <div class="title">
+                    <a href="story.html">Whispers in the Gloomwood</a>
+                </div>
+                <div class="story"> <p>Deep within the ancient forest of Gloomwood, a young apprentice discovers a forbidden spell that
+                    awakens a slumbering darkness. She must master the sp</p>
+                </div>
+               <hr>
+                <div class="authorLike">
+                    <p>By E. Gale</p>
+                    <button class="like">like</button>
+                </div>
+            </div>
 
-        <div class="stories">
-            <div class="story">
-                <li class="fantasy">Fantacy</li>
-                <div class="boxes">
-                    <a href="story.html" id="storybox1">Whispers in the Gloomwoods</a>
-                    <p>Deep within the ancient forest of Gloomwood, a young apprentice discovers a forbidden spell that
-                        awakens a slumbering darkness. She must master Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Earum aliquid maiores dolor, laudantium quis veritatis expedita doloremque,
-                        harum illum tempore exercitationem assumenda ea modi molestiae, corporis delectus porro
-                        obcaecati nemo dicta inventore sed cupiditate debitis quas quo. Reprehenderit esse qui neque
-                        deleniti nesciunt distinctio possimus placeat expedita dolorum, quas cupiditate!</p>
-                    <hr>
-                    <div class="box">
-                        <p>By E. Gale</p>
-                        <button class="like" id="likes">like </button>
-                    </div>
-                </div>
-            </div>
-            <div class="story">
-                <li class="purple mystery">Mystery</li>
-                <div class="boxes">
-                    <a href="library.html" id="storybox1">The Iron Heart Of London</a>
+            <div class="storyBoxes box2">
+                <p class="genre mystery">Mystery</p>
+              <div class="title">
+                  <a href="story.html">The Iron Heart of London</a>
+              </div>
+                <div class="story">
                     <p>A detective chases a phantom industrialist whose strange clockwork inventions are causing chaos
-                        across Victorian London. A trail of brass gears an Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Repellendus neque odit placeat ipsum tempora rerum! Dolore ut hic repellat
-                        neque ipsam omnis perspiciatis praesentium, animi architecto et quis atque asperiores?
-                        Distinctio deserunt minima pariatur officiis possimus quisquam ipsa, placeat dolor dolorem est
-                        aperiam voluptatem. Dolorum tempora a eius rem. Ab!</p>
-                    <hr>
-                    <div class="box">
-                        <p>By C. Doyle</p>
-                        <button class="like">like</button>
-                    </div>
+                    across Victorian London. A trail of brass gears and cr</p>
+                
+                </div><hr>
+                <div class="authorLike">
+                    <p>By C. Doyle</p>
+                    <button class="like">like</button>
                 </div>
             </div>
-            <div class="story">
-                <li class="blue sci-fi">Sci-Fi</li>
-                <div class="boxes">
-                    <a href="library.html">The Chronos Watch</a>
-                    <p>A thrilling tale of time travel and paradoxes, where a simple pocket watch holds the key to the
-                        universe's fate. Every tick of the clock brings a Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Voluptatem ab ex sunt aspernatur? Ab eaque ratione id nostrum voluptas qui
-                        incidunt odit consectetur maxime! Ipsa, maiores! Distinctio voluptatum eveniet consequatur,
-                        explicabo debitis, et vel deleniti deserunt, exercitationem labore commodi dolorem! Nesciunt,
-                        minima illo. Tenetur quasi iure sint nisi itaque officiis?</p>
-                    <hr id="hr3">
-                    <div class="box" id="box3">
-                        <p>By A. Clarke</p>
-                        <button class="like">like</button>
-                    </div>
+
+            <div class="storyBoxes box3">
+                <p class="genre adventure">adventure</p>
+                <div class="title">
+                    <a href="story.html">The Chronos watch</a>
+                </div>
+                <div class="story">
+                     <p>A thrilling tale of time travel and paradoxes, where a simple pocket watch holds the key to the
+                    universe's fate. Every tick of the clock brings a</p>
+                
+                </div>
+               <hr>
+                <div class="authorLike">
+                    <p>By A. Clarke</p>
+                    <button class="like">like</button>
                 </div>
             </div>
         </div>
+
+        <button type="button" id="browse">Browse More Stories</button>
     </div>
 
-    <a href="library.html" id="Browse">Browse More Stories</a>
-
- <script src="logout.js"></script>
- <script src="dynamicNavbar.js"></script>
-
- <script>
-    const hamburger = document.querySelector('.hamburger');
-const navbar = document.querySelector('.navbar');
-
-hamburger.addEventListener('click', () => {
-  navbar.classList.toggle('active');
-});
-
- </script>
+    <script src="dynamicNavbar.js"></script>
+    <script src="library.js"></script>
+    <script src="logout.js"></script>
 </body>
 
 </html>

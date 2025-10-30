@@ -1,65 +1,63 @@
-
-.loginForm {
-    height: 65vh;
-    width: 27vw;
-    margin: 70px auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px 0px #7a7171;
-    background-color: white;
-}
-
-h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-
-p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.headings {
-    padding: 30px;
-    line-height: 30px;
-}
-
-.inputs {
-    height: 200px;
-    width: 380px;
-    margin: auto;
-}
-
-input {
-    display: block;
-    margin-top: 20px;
-    width: 350px;
-    height: 35px;
-    border-radius: 5px;
-}
-
-.userName,.password {
-    margin: 10px 10px;
-}
-
-
-#login {
-    display: block;
-    margin: 0px auto 20px auto;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    height: 35px;
-    width: 90%;
+}
+
+html,body{
+    width: 100%;
+    height: auto;
+    background-color: #f9fafb;
+}
+.container{
+max-width: 400px;
+margin: auto;
+padding: 50px 40px;
+box-shadow: 1px 1px 20px rgb(214, 210, 210);
+background-color: white;
+border-radius: 5px;
+}
+.username,.password{
+    width: 100%;
+    margin: 20px 0px;
+}
+.username input,.password input{
+    width: 100%;
+    padding: 10px;
     border-radius: 5px;
-    background-color: #10b981;
+    display: block;
+    margin: 0 auto;
+}
+.texts{
+    text-align: center;
+}
+
+.texts h2{
+    font-size: 35px;
+}
+.texts p{
+    font-size: 17px;
+}
+
+#login{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px ;
     color: white;
+    font-size: 15px;
+    background-color:  #10b981;
     font-weight: bold;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#account {
+.user{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+#account{
     text-decoration: none;
-    font-size: 16px;
     color: #10b981;
 }

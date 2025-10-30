@@ -1,63 +1,59 @@
-.loginForm{
-    height: 75vh;
-    width: 27vw;
-    margin: 70px auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 20px 0px #7a7171;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+}
+
+.container{
+    width: 400px;
+    margin: 100px auto;
+    padding: 70px 20px;
+    box-shadow: 1px 1px 20px 0px rgb(129, 127, 127);
     background-color: white;
-}
-
-h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
-
-p{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.headings{ 
-    padding: 30px;
-    line-height: 50px;
-}
-
-.inputs{
-    height: 200px ;
-    width: 380px;
-    margin: auto;
-}
-
-input{
-    display: block;
-    margin-top: 10px;
-    width: 350px;
-    height: 35px;
     border-radius: 5px;
 }
 
-.data{
-    margin-top: 25px ;
+.texts{
+    text-align: center;
+    line-height: 30px;
+    
+}
+.texts h2{
+    font-size: 35px;
+}
+
+.username, .password,.email{
+    padding: 15px;
+}
+.username input,.password input,.email input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 #signup{
     display: block;
-    margin: 90px auto 20px auto;
-    box-sizing: border-box;
-    height: 35px;
-    width: 90%;
-    border-radius: 5px;
-    background-color: #10b981;
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 7px 130px;
     color: white;
-    font-weight: bold;
-    font-size: 16px;
+    background-color: #10b981;
     cursor: pointer;
 }
 
-#account{
+.sign{
+    text-align: center;
+    font-size: 18px;
+}
+
+.sign a{
     text-decoration: none;
-    font-size: 16px;
     color: #10b981;
 }
+

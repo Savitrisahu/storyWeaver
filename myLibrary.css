@@ -1,21 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.mainContainer{
+    width: 85%;
+    margin: auto;
+    padding: 10px;    
+}
 .personalLibrary h2{
     font-size: 35px;
-    margin: 100px 0px 5px 100px;
 }
 .personalLibrary p{
-    font-size: 20px;
-     margin: 0px 0px 25px 100px;
+    font-size: 18px;
 }
 
 .container{
-    height: 20vh;
-    width: 85vw;
+    width: 100%;
     border: 1px solid black;
     border-radius: 5px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    margin-top: 40px;
 }
 .container p{
     font-size: 20px;

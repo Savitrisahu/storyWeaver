@@ -3,91 +3,99 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.(0)">
     <title>Library Page</title>
+    <link rel="stylesheet" href="newnavbar.css">
     <link rel="stylesheet" href="library.css">
-    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="colorPage.css">
-    <!-- <link rel="stylesheet" href="responsiveLibrary.css"> -->
-     <link rel="stylesheet" href="responsiveLibrary.css">
+    <link rel="stylesheet" href="responsiveLibrary.css">
 </head>
 
 <body>
-    <div class="navbar" id="navbar"></div>
+    <div id="navbar" class="navbar"></div>
+    <div class="container">
+        <div class="headings">
+            <h2>The Library</h2>
+            <p>Browse all stories or filter by genre. (3 total)</p>
+        </div>
 
-    <div class="texts">
-        <h2>The Library</h2>
-        <p>Browse all stories or filter by genre </p>
-    </div>
-
-    <div class="searchbox">
-        <input type="search" name="search" id="search" placeholder="Search by Title, Author or Genre">
-        <hr>
-       <div class="links">
-  <a href="#" id="all">All (<span id="totalCount">0</span>)</a>
-  <a href="#" data-genre="Horror">Horror (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Mystery">Mystery (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Action">Action (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Sci-Fi">Sci-Fi (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Romance">Romance (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Fantasy">Fantasy (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Adventure">Adventure (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Historical">Historical (<span class="count">0</span>)</a>
-  <a href="#" data-genre="Children">Children (<span class="count">0</span>)</a>
+        <div class="searchBox">
+            <div class="searchingbox">
+                <input type="search" name="" id="searchbox" placeholder="Search you're story by title or genre">
+            </div>
+            <hr>
+           <div class="links">
+  <a href="library.html" data-genre="all">All <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Horror">Horror <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Mystery">Mystery <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Action">Action <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Sci-Fi">Sci-Fi <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Romance">Romance <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Fantasy">Fantasy <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Comedy">Comedy <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Adventure">Adventure <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Historical">Historical <span class="count">(0)</span></a>
+  <a href="StoryGenrePage.html?genre=Children">Children <span class="count">(0)</span></a>
 </div>
 
-    </div>
-
-    <div class="stories">
-        <div class="story story1">
-            <li class="fantasy">Fantacy</li>
-            <div class="boxes boxes1">
-                <a href="story.html">Whispers in the Gloomwoods </a>
-                <p>Deep within the ancient forest of Gloomwood, a young apprentice discovers a forbidden spell</p>
+        </div>
+        <div class="storyBox">
+            <div class="storyBoxes box1">
+                <p class="genre fantasy">Fantasy</p>
+                <div class="title">
+                    <a href="story.html">Whispers in the Gloomwood</a>
+                </div>
+                <div class="story">
+                    <p>Deep within the ancient forest of Gloomwood, a young apprentice discovers a forbidden spell that
+                        awakens a slumbering darkness. She must master the sp</p>
+                </div>
                 <hr>
-                <div class="box box1">
+                <div class="authorLike">
                     <p>By E. Gale</p>
                     <button class="like">like</button>
                 </div>
             </div>
-        </div>
-        <div class="story story2">
-            <li class=" mystery">Mystery</li>
-            <div class="boxes boxes2">
-                <a href="story.html">The Iron Heart Of London</a>
-                <p>A detective chases a phantom industrialist whose strange clockwork inventions are causing chaos
-                    across </p>
+
+            <div class="storyBoxes box2">
+                <p class="genre mystery">Mystery</p>
+                <div class="title">
+                    <a href="story.html">The Iron Heart of London</a>
+                </div>
+                <div class="story">
+                    <p>A detective chases a phantom industrialist whose strange clockwork inventions are causing chaos
+                        across Victorian London. A trail of brass gears and cr</p>
+
+                </div>
                 <hr>
-                <div class="box box2">
+                <div class="authorLike">
                     <p>By C. Doyle</p>
                     <button class="like">like</button>
                 </div>
             </div>
-        </div>
 
-        <div class="story story3">
-            <li class="sci-fi">Sci-Fi</li>
-            <div class="boxes boxes3" id="b3">
-                <a href="story.html">The Chronos Watch</a>
-                <p>A thrilling tale of time travel and paradoxes, where a simple pocket watch holds the key to the
-                    universe's</p>
-                <hr id="h3">
-                <div class="box box3">
+            <div class="storyBoxes box3">
+                <p class="genre adventure">adventure</p>
+                <div class="title">
+                    <a href="story.html">The Chronos watch</a>
+                </div>
+                <div class="story">
+                    <p>A thrilling tale of time travel and paradoxes, where a simple pocket watch holds the key to the
+                        universe's fate. Every tick of the clock brings a</p>
+
+                </div>
+                <hr>
+                <div class="authorLike">
                     <p>By A. Clarke</p>
                     <button class="like">like</button>
                 </div>
             </div>
         </div>
-
     </div>
-   
 
-    <div class="stories2" id="storyBox"></div>
-
-
+<!-- <div id="storyBox"></div> -->
+    <script src="dynamicNavbar.js"></script>
     <script src="library.js"></script>
     <script src="logout.js"></script>
-    <script src="dynamicNavbar.js"></script>
 </body>
 
 </html>

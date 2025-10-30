@@ -1,64 +1,74 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const isLoggedIn = localStorage.getItem("isLoggedIn");
-    
-    if (isLoggedIn !== "true") {
-        
-        alert("Please login to access the library!");
-        window.location.href = "login.html";
-    }
-});
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+  
+  if (isLoggedIn !== "true") {
+    alert("Please login to access the library!");
+    window.location.href = "login.html";
+  }
 
-const storyContainer = document.getElementById("storyBox");
-const stories = JSON.parse(localStorage.getItem("stories")) || [];
-storyContainer.innerHTML = "";
+  const storyContainer = document.querySelector(".storyBox"); 
+  const stories = JSON.parse(localStorage.getItem("stories")) || [];
 
-stories.forEach((story, index) => {
-  const storyDiv = document.createElement("div");
-  storyDiv.className = "story";
+  // ---- Display all stories ----
+  stories.forEach((story, index) => {
+    // Convert genre to match your CSS class names
+    const genreClass = story.genre
+      .toLowerCase()
+      .replace(/\s+/g, "-") // e.g. "Sci Fi" → "sci-fi"
+      .replace(/[^a-z0-9-]/g, ""); // remove special characters
 
-  storyDiv.innerHTML = `
-    <li class="${story.genreClass}">${story.genre}</li>
-    <div class="boxes">
-      <a href="story.html?index=${index}">${story.title}</a>
-      <p>${story.story.substring(0, 150)}...</p>
-      <hr>
-      <div class="box">
-        <p>By ${story.author}</p>
-        <button class="like">like</button>
+    const storyDiv = document.createElement("div");
+    storyDiv.classList.add("storyBoxes");
+
+    storyDiv.innerHTML = `
+      <p class="genre ${genreClass}">${story.genre}</p>
+      <div class="title">
+        <a href="story.html?index=${index}">${story.title}</a>
       </div>
-    </div>
-  `;
+      <div class="story">
+        <p>${story.story.substring(0, 150)}...</p>
+      </div>
+      <hr>
+      <div class="authorLike">
+        <p>By ${story.author}</p>
+        <button class="like">Like</button>
+      </div>
+    `;
 
-  storyContainer.appendChild(storyDiv);
-});
+    storyContainer.appendChild(storyDiv);
+  });
 
-const storie= JSON.parse(localStorage.getItem("stories")) || [];
-const totalCountSpan = document.getElementById("totalCount");
-totalCountSpan.textContent = stories.length;
+  // ---- Update genre counts ----
+  const genreLinks = document.querySelectorAll(".links a");
+  const genreCounts = {};
 
-const genreLinks = document.querySelectorAll(".links a[data-genre]");
+  genreLinks.forEach(link => {
+    const text = link.childNodes[0].textContent.trim(); 
+    genreCounts[text] = 0;
+  });
 
-const genreCounts = {};
+  stories.forEach(story => {
+    const genre = story.genre.trim();
+    if (genreCounts.hasOwnProperty(genre)) {
+      genreCounts[genre]++;
+    }
+  });
 
-genreLinks.forEach(link => {
-  const genre = link.dataset.genre;
-  genreCounts[genre] = 0;
-});
+  genreLinks.forEach(link => {
+    const text = link.childNodes[0].textContent.trim();
+    const countSpan = link.querySelector(".count");
+    if (countSpan) {
+      countSpan.textContent = `(${genreCounts[text] || 0})`;
+    }
+  });
 
-stories.forEach(story => {
-  if (genreCounts.hasOwnProperty(story.genre)) {
-    genreCounts[story.genre]++;
+  const allLink = Array.from(genreLinks).find(link =>
+    link.textContent.trim().startsWith("All")
+  );
+  if (allLink) {
+    const countSpan = allLink.querySelector(".count");
+    if (countSpan) {
+      countSpan.textContent = `(${stories.length})`;
+    }
   }
 });
-
-genreLinks.forEach(link => {
-  const genre = link.dataset.genre;
-  const countSpan = link.querySelector(".count");
-  if (countSpan) {
-    countSpan.textContent = genreCounts[genre];
-  }
-});
-
-
-
-

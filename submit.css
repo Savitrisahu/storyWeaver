@@ -1,60 +1,75 @@
 
-h2{
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer{
+    width: 80%;
+    margin: 80px auto;
+}
+.texts h2{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: bold;
-    margin: 100px 0px 10px 150px;
+}
+.texts p{
+    font-size: 19px;
 }
 
-.storySubmitForm{
-    height: 79vh;
-    width: 80vw;
-    margin: 30px auto;
+.container{
+    width: 100%;
+    margin: 50px auto;
     box-shadow: 1px 1px 20px 0px #c9baba;
+    padding: 20px;
 }
 
-
+.titleAuthorBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+.title,.author{
+    width: 45%;
+}
 .title input , .author input{
-    height: 50px;
-    width: 37vw;
+    width: 100%;
     border-radius: 5px;
+    padding:10px ;
 }
 
 .genre select{
-    height: 50px;
-    width: 77vw;
+    width: 95%;
     border-radius: 5px;
+    display: block;
      margin:auto;
+     padding: 10px;
 }
 .genre label, .content label{
     margin-left: 30px;
 }
 
-.details{
-
-    display: flex;
-    justify-content: space-around;
-}
-
-.title,.author,.genre,.content{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-}
+ .titleauthorBox,.genre,.content{
+    margin-top: 35px;
+} 
 
 .content textarea {
-  width: 77vw;
+  width: 95%;
   height: 30vh;
   border-radius: 5px;
   margin: 0 auto;
   padding: 10px;
   box-sizing: border-box;
   resize: none; 
+  display: block;
 }
 
 #submit{
-    padding: 15px 30px;
-    color: red;
+    padding: 10px 30px;
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -62,7 +77,7 @@ h2{
     margin:  20px auto;
     background-color: #10b981;
     color: white;
-    width: 70vw;
+    width: 95%;
 }
 
 #submit:hover{

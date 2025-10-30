@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.getElementById("login");
-    const usernameInput = document.getElementById("Username"); 
+    const usernameInput = document.getElementById("username"); 
     const passwordInput = document.getElementById("password");
 
     loginBtn.addEventListener("click", (e) => {

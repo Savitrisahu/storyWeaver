@@ -1,102 +1,41 @@
-/* 🖥️ Large Desktop	above 1200px	(Default styles — no query needed) */
-@media (max-width:1320px) {
-    .searchbox{
-        height: 33vh;
+
+ @media (max-width:1277px) {
+    .container{
+        width: 95%;
+        margin: 70px auto;
+    }
+    .storyBoxes{
+        padding: 25px;
+        border-radius: 9px;
+    }
+    .storyBoxes{
+        margin: 2px auto;
     }
 
-    .stories{
-        height: auto;
+ }
+
+ @media (max-width:992px) {
+    .storyBoxes{
+        width: 31%;
     }
-    .story{
-        height: 55vh;
+
+    .story,.authorLike,.title{
+        padding-bottom: 20px;
     }
-}
+ }
 
-/* 💻 Laptop / Small Desktop	up to 1200px */
-	@media (max-width: 1200px) { 
-        .links a{
-            margin: 5px;
-        }
-        .links{
-            margin-top: 10px;
-        }
-    }
-/* 📱 Tablet (landscape)	up to 992px	 */
-@media (max-width: 992px) { 
-     .links a{
-            margin: 0px;
-            padding: 0px;
-            font-size: 12px;
-        }
-        .links{
-            margin-top: 1px;
-        }
-}
-
-
-/* 📱 Tablet (portrait)	up to 768px */
-	@media (max-width: 768px) { 
-        .texts h2{
-            font-size: 25px;
-        }
-        .texts p{
-            font-size: 15px;
-        }
-
-        .boxes a{
-            font-size: 15px;
-        }
-        .boxes p{
-            font-size: 10px;
-        }
-        .story{
-            height: 50vh;
-        }
-     }
-
-
-
-/* 📱 Large Mobile	up to 576px	 */
-@media (max-width: 576px) {
-    .stories{
+ @media (max-width:768px) {
+    .storyBox{
         display: flex;
-        flex-direction: column;
-        border: 1px solid red;
+        flex-wrap: wrap;
     }
-
-    .story{
-        width: 60vw;
-        height: 45vh;
+    .storyBoxes{
+        width: 48%;
     }
-     .texts p{
-            font-size: 20px;
-        }
+ }
 
-        .boxes a{
-            font-size: 20px;
-        }
-        .boxes p{
-            font-size: 10px;
-        }
-       
-}
-
-
-/* 📱 Small Mobile	up to 400px */
-	@media (max-width: 400px) {
-        .story{
-            height: 50vh;
-        }
-
-        .texts h2{
-            font-size: 25px;
-            margin-left: 10px;
-        }
-        .texts p{
-            font-size: 15px;
-            margin-left: 10px;
-        }
-        .texts{
-            text-align: start;
-        }
-     }
+ @media (max-width:600px) {
+    .storyBoxes{
+        width: 100%;
+    }
+ }
