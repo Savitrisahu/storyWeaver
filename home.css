@@ -70,8 +70,8 @@ html, body{
     font-size: 40px;
 }
 
-#browse{
-    /* text-decoration: none; */
+/* #browse{
+    text-decoration: none;
     display: block;
     width: 230px;
     margin: 30px auto;
@@ -81,7 +81,7 @@ html, body{
     cursor: pointer;
     background-color:  #10b981;
     color: white;
-}
+} */
 
 .genre{
     width: 80px;
