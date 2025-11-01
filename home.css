@@ -71,7 +71,7 @@ html, body{
 }
 
 #browse{
-    text-decoration: none;
+    /* text-decoration: none; */
     display: block;
     width: 230px;
     margin: 30px auto;
